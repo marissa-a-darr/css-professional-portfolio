@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+/*imports google font*/
+
+* {
+    font-family: 'Share Tech', sans-serif;
+    /* sets font to Share Tech */
+    background-color: #8D99AE;
+    /* page background color*/
+    margin: auto;
+}
+
+/*section title colors white*/
+.section-titles {
+    color: #FFFFFF
+}
+
+ul {
+    /*makes nav bar flex*/
+    display: flex;
+    /*rids of bullet points*/
+    list-style-type: none;
+    /*centers text*/
+    text-align: center;
+    /*gives a solid bottom border*/
+    border-bottom: solid;
+
+}
+
+
+
+#avatar-photo {
+    /*enables flex/*/
+    display: flex;
+    /*gives a max width of 150px*/
+    max-width: 150px;
+    /*makes avatar picture flex when resizing*/
+    width: 100%;
+}
+
+#about-me-text {
+    /*text flexes upon resize*/
+    display: flex;
+    /*aligns text to center*/
+    text-align: center;
+    /*provides padding all around text of 20px*/
+    padding: 20px;
+    /*background color can be seen through text*/
+    background-color: transparent;
+}
+
+.section-titles {
+    /*centers text alignment*/
+    text-align: center;
+    /*provides a margin of 10px around section titles*/
+    margin: 10px;
+}
+
+.featured-project {
+    padding: 0px;
+    position: relative;
+    /*enables the featured project to fit well in area*/
+    width: fit-content;
+    /*causes text to align left*/
+    text-align: left;
+    /*provides solid border around*/
+    border-style: solid;
+    /*gives the border a width of 3px*/
+    border-width: 3px;
+    /*enables flex*/
+    display: flex;
+    /* margin automatically adjusts for content*/
+    margin: auto;
+    /*provides content most centered and space around it*/
+    justify-content: space-around;
+
+}
+
+/*causes the box to animate upon hover*/
+.featured-project:hover {
+    background: darkgray;
+    cursor: pointer;
+    filter: brightness(50%);
+
+}
+
+/*provides appropriate size for the img*/
+#featured-screenshot {
+    max-width: 500px;
+    width: 100%;
+}
+
+
+.featured-project-text {
+    /*text for featured project will be in upper left corner with color of purple and a transparent background around text*/
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: purple;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.card {
+    padding: 0;
+    /*position for cards to be relative to each other*/
+    position: relative;
+    width: fit-content;
+    /*causes text to align left*/
+    text-align: left;
+    /*provides solid border around*/
+    border-style: solid;
+    /*gives the border a width of 3px*/
+    border-width: 3px;
+    /*enables flex*/
+    display: flex;
+    /*margin automatically adjusts */
+    margin: auto;
+    justify-content: space-around;
+}
+
+/*animates dark grey upon hover with text staying bright*/
+.card:hover {
+    background: darkgray;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+/*fixes text in top left corner with purple text and transparent grey/black background*/
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    color: purple;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*provides dimensions of screenshot, width automatically adjusting to fit, and centered*/
+.card-photo {
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+/*fits cards side by side with automatically adjusting space between each other*/
+.current-work-cards {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+
+/*causes below changes for responsive design at 480px and smaller*/
+@media (max-width: 480px) {
+
+    /*adjusts font for titles to be smaller*/
+    .section-titles {
+        font-size: smaller
+    }
+
+    ;
+
+    /*makes header smaller*/
+    .h1 {
+        font-size: smaller;
+    }
+
+    /*resizes about me text to 15px*/
+    #about-me-text {
+        font-size: 15px;
+    }
+
+    /*enables cards to be stacked vertically upon resize*/
+    .current-work-cards {
+        flex-direction: column;
+
+    }
+}
