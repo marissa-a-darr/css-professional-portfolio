@@ -6,13 +6,13 @@ A webpage dedicated to displaying my professional portfolio with an avatar photo
 N/A
 
 ## Links 
-- [Repo]
+- [Repo](https://github.com/marissa-a-darr/css-professional-portfolio)
 
-- [URL]
+- [URL](https://marissa-a-darr.github.io/css-professional-portfolio/)
 
 ## Screenshot 
 
-![Professional Portfolio](../css-student-portfolio/assets/images/screenshot.jpeg)
+![Professional Portfolio](./assets/images/portfolioscreenshot.png)
 
 ## Built With
 -HTML
